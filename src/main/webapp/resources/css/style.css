@@ -1,0 +1,131 @@
+.page-header {
+  font-size: 30px;
+  text-align: right;
+  display: block;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 35%;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-radius: 0 0 25px 0;
+  background-color: #041C32;
+}
+.header {
+  user-select: none;
+}
+.logo {
+  user-select: none;
+  width: 100px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+.main-table {
+  width: 100%;
+}
+.results-table {
+  width: 60%;
+  border: 2px solid white;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+.results-table td,
+.results-table th {
+  border: 1px solid white;
+  width: 10%;
+}
+.areaImage {
+  width: 300px;
+  border-radius: 10px;
+  user-select: none;
+}
+body {
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  background-color: #04293A;
+  font-family: Akrobat, Verdana, sans-serif;
+  color: white;
+}
+.submit-button {
+  border: none;
+  border-radius: 2px;
+  background-color: #041C32;
+  color: white;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 400ms;
+}
+.submit-button:hover {
+  transition-duration: 400ms;
+  background-color: #ECB365;
+}
+.submit-button:disabled {
+  transition-duration: 400ms;
+  transform: scale(0);
+}
+td,
+th {
+  padding: 5px;
+}
+.sub-header {
+  font-weight: bold;
+  font-size: 35px;
+  user-select: none;
+}
+label {
+  user-select: none;
+}
+.x-input {
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+.y-input,
+.r-input {
+  text-align: center;
+  width: 30px;
+  border: 0;
+  border-radius: 2px;
+  padding: 2px 5px;
+  font-size: 20px;
+  transition-duration: 400ms;
+  background-color: lightgreen;
+}
+.y-input:focus,
+.r-input:focus {
+  border: none;
+  user-select: none;
+  outline: none;
+  transition-duration: 400ms;
+  width: 200px;
+}
+.clear-button {
+  border: none;
+  border-radius: 2px;
+  background-color: #041C32;
+  color: white;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px;
+  transition-duration: 400ms;
+}
+.clear-button:hover {
+  transition-duration: 400ms;
+  background-color: #ECB365;
+}
+/*# sourceMappingURL=style.css.map */
