@@ -3,29 +3,47 @@
 @darkerColor: #041C32;
 @lighterColor: #064663;
 @highlightColor: #ECB365;
-@textColor: white;
+@whiteColor: white;
+
+.header-container, .area-container, .form-container, .results-table-container {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: @mainColor;
+}
+
+.area-form-container {
+  display: flex;
+}
+
+.area-container, .form-container {
+  flex: 1;
+}
 
 .page-header {
   font-size: 30px;
 
-  text-align: right;
+  text-align: left;
   display: block;
   position: sticky;
 
   top: 0;
   left: 0;
-  width: 35%;
 
-  padding-right: 30px;
-  padding-bottom: 20px;
-  padding-top: 10px;
+  padding: 10px 30px 20px;
 
-  border-radius: 0 0 25px 0;
-  background-color: #041C32;
+  background-color: @darkerColor;
+}
+
+.canvas {
+  background-color: @whiteColor;
+  border-radius: 10px;
 }
 
 .header {
   user-select: none;
+  margin: 0;
+  padding: 20px;
 }
 
 
@@ -36,9 +54,8 @@
   position: fixed;
   right: 20px;
   top: 20px;
-}
-.main-table {
-  width: 100%;
+
+  transform: translateY(-20%);
 }
 
 .results-table {
@@ -63,13 +80,13 @@ body {
   text-align: center;
   font-size: 25px;
   margin: 0;
-  background-color: @mainColor;
+  background-color: @lighterColor;
 
   font-family: @mainText;
-  color: @textColor;
+  color: @whiteColor;
 }
 
-.submit-button {
+.button {
   border: none;
   border-radius: 2px;
   background-color: @darkerColor;
@@ -90,20 +107,6 @@ body {
     transition-duration: 400ms;
     transform: scale(0);
   }
-}
-
-td, th {
-  padding: 5px;
-}
-
-.sub-header {
-  font-weight: bold;
-  font-size: 35px;
-  user-select: none;
-}
-
-label {
-  user-select: none;
 }
 
 .x-input {
@@ -133,25 +136,5 @@ label {
     outline: none;
     transition-duration: 400ms;
     width: 200px;
-  }
-}
-
-.clear-button {
-  border: none;
-  border-radius: 2px;
-  background-color: @darkerColor;
-  color: white;
-  padding: 12px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-
-  margin: 10px;
-
-  transition-duration: 400ms;
-  &:hover {
-    transition-duration: 400ms;
-    background-color: @highlightColor;
   }
 }

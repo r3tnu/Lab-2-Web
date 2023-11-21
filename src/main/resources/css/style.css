@@ -1,19 +1,37 @@
+.header-container,
+.area-container,
+.form-container,
+.results-table-container {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #04293A;
+}
+.area-form-container {
+  display: flex;
+}
+.area-container,
+.form-container {
+  flex: 1;
+}
 .page-header {
   font-size: 30px;
-  text-align: right;
+  text-align: left;
   display: block;
   position: sticky;
   top: 0;
   left: 0;
-  width: 35%;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  border-radius: 0 0 25px 0;
+  padding: 10px 30px 20px;
   background-color: #041C32;
+}
+.canvas {
+  background-color: white;
+  border-radius: 10px;
 }
 .header {
   user-select: none;
+  margin: 0;
+  padding: 20px;
 }
 .logo {
   user-select: none;
@@ -21,9 +39,7 @@
   position: fixed;
   right: 20px;
   top: 20px;
-}
-.main-table {
-  width: 100%;
+  transform: translateY(-20%);
 }
 .results-table {
   width: 60%;
@@ -46,11 +62,11 @@ body {
   text-align: center;
   font-size: 25px;
   margin: 0;
-  background-color: #04293A;
+  background-color: #064663;
   font-family: Akrobat, Verdana, sans-serif;
   color: white;
 }
-.submit-button {
+.button {
   border: none;
   border-radius: 2px;
   background-color: #041C32;
@@ -62,25 +78,13 @@ body {
   font-size: 14px;
   transition-duration: 400ms;
 }
-.submit-button:hover {
+.button:hover {
   transition-duration: 400ms;
   background-color: #ECB365;
 }
-.submit-button:disabled {
+.button:disabled {
   transition-duration: 400ms;
   transform: scale(0);
-}
-td,
-th {
-  padding: 5px;
-}
-.sub-header {
-  font-weight: bold;
-  font-size: 35px;
-  user-select: none;
-}
-label {
-  user-select: none;
 }
 .x-input {
   background-color: white;
@@ -110,22 +114,5 @@ label {
   outline: none;
   transition-duration: 400ms;
   width: 200px;
-}
-.clear-button {
-  border: none;
-  border-radius: 2px;
-  background-color: #041C32;
-  color: white;
-  padding: 12px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 10px;
-  transition-duration: 400ms;
-}
-.clear-button:hover {
-  transition-duration: 400ms;
-  background-color: #ECB365;
 }
 /*# sourceMappingURL=style.css.map */
